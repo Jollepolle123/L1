@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./index.js"></script>
+    <title>Document</title>
+    <script> 
+        function fun() { 
+            const welcome = document.getElementById('welcome')
+            welcome.innerHTML = 'Hej ' + text.value + ', här får du en söt bild på min hund:'
+            const pic = document.getElementById('picture')
+            pic.setAttribute('src', './images/hardy.jpg')
+            pic.setAttribute('height', '400px')
+        } 
+     </script>
+</head>
+<body>
+    <label>Skriv in ditt namn</label>
+    <input type="text" id="text">
+    <button onclick = "fun()" > Click Me </button>
+    <p id="welcome"></p>
+    <img id="picture">
+    </body>
+</html>
